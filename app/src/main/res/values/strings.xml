@@ -1,3 +1,78 @@
 <resources>
     <string name="app_name">Quran</string>
+    <string name="quran_text">قراّّن</string>
+    <string name="azakar_text">أذكار</string>
+    <string name="sabha_text">السبحة</string>
+    <string name="sonn_text">احاديث</string>
+
+    <!--!-->
+    <string name="radio_quran">أذاعة القران الكريم</string>
+    <string name="roqya">الرقية</string>
+    <string name="islam_library">المكتبة الاسلامية</string>
+    <string name="names_of_allah">اسماء الله الحسنى</string>
+    <string name="choose_zaker_text">اختر الذكر</string>
+    <string name="chhose1_zeker">استغفر الله</string>
+    <string name="chhose2_zeker">الحمد لله رب العالمين</string>
+    <string name="chhose3_zeker">الحمد لله حمدا كثيرا مباركا فيه</string>
+    <string name="chhose4_zeker">الله اكبر</string>
+    <string name="chhose5_zeker">اللهم صل وسلم وبارك على سيدنا محمد</string>
+    <string name="chhose6_zeker">سبحان الله</string>
+    <string name="chhose7_zeker">سبحان الله العظيم وبحمده</string>
+    <string name="chhose8_zeker"></string>
+
+    <!--!-->
+    <string name="roqua1">رقية للعين والحسد</string>
+    <string name="roqua2">رقية السحر</string>
+    <string name="roqua3">رقية السحر واللمس والعين</string>
+    <string name="roqua4">الرقيه الشاملة</string>
+    <string name="roqua5">رقية الخوف والغم</string>
+
+
+    <!--!-->
+    <string name="azkar_text">أذكار المسلم</string>
+    <string name="azkar1">أذكار الصباح</string>
+    <string name="azkar2">أذكار الصلاة</string>
+    <string name="azkar3">أذكارالاستيقاظ</string>
+    <string name="azkar4">أذكار النوم</string>
+    <string name="azkar5">أذكار المساء</string>
+    <string name="azkar6">أذكار الصلاة</string>
+    <string name="azkar7">اذكار الدخول والخروج من المنزل</string>
+    <string name="azkar8">اذكار لبس وخلع الثياب</string>
+
+
+    <!--!-->
+    <string name="hadeeth_text">أحاديث النبى</string>
+    <string name="hadeeth1">الصلاة</string>
+    <string name="hadeeth2">الصوم</string>
+    <string name="hadeeth3">الزكاة</string>
+    <string name="hadeeth4">الاحاديث القدسية</string>
+    <string name="hadeeth5">بر الوالدين</string>
+    <string name="hadeeth6">الصدقة</string>
+    <string name="hadeeth7">الحج</string>
+    <string name="hadeeth8">الوضوء</string>
+    <string name="hadeeth9">الاغتسال</string>
+    <string name="hadeeth10">اليتيم</string>
+
+    <!--!-->
+    <string name="sona_text">المكتبة الاسلامية</string>
+    <string name="sona1">سيرة النبى</string>
+    <string name="sona2">اعجاز القراّن</string>
+    <string name="sona3">غزوات الرسول</string>
+    <string name="sona4">من وصايا الرسول</string>
+    <string name="sona5">قصص وعبر</string>
+    <string name="sona6">قصص القراّن</string>
+    <string name="sona7">قصص الصحابة</string>
+    <string name="sona8">علامات الساعه</string>
+    <string name="sona9">الملائكة</string>
+    <string name="sona10">قصص الصالحين</string>
+    <!--!-->
+    <!-- quran kareem!-->
+    <string name="quranWithoutTafseer">القراّن الكريم بدون تفسير</string>
+    <string name="quranWithTafseer">القراّن الكريم بلتفسير</string>
+
+    <!--!-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

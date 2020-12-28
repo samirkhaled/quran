@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.fragments.HomeFragment"
+        android:textDirection="rtl">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/AppTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_36sdp"
+                    android:text="استغفار "
+                    android:textColor="@color/home_title_text"
+                    android:textSize="@dimen/_23ssp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/layer1"
+                    android:layout_below="@+id/AppTitle"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:id="@+id/quran_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/quran"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/quran_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/quran_text"
+                                android:layout_below="@+id/quran_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:layout_toRightOf="@+id/quran_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/azkar_card"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/azakar"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/azkar_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/azakar_text"
+                                android:layout_below="@+id/azkar_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/layer2"
+                    android:layout_below="@+id/layer1"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:id="@+id/sabha_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/sabaha"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/sabha_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sabha_text"
+                                android:layout_below="@+id/sabha_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:layout_toRightOf="@+id/sabha_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/ahadeeth_card"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/sonn"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/sonn_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sonn_text"
+                                android:layout_below="@+id/sonn_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/layer3"
+                    android:layout_below="@+id/layer2"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:id="@+id/radio_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/radio"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/radio_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_quran"
+                                android:layout_below="@+id/radio_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:layout_toRightOf="@+id/radio_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/isalam_library_card"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/library"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/library_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/islam_library"
+                                android:layout_below="@+id/library_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/layer4"
+                    android:layout_below="@+id/layer3"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:id="@+id/assmaa_allah_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/asmaa_allah"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/assmaa_allah_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/names_of_allah"
+                                android:layout_below="@+id/assmaa_allah_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        app:cardElevation="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardBackgroundColor="@color/background_card_color"
+                        android:layout_toRightOf="@+id/assmaa_allah_card"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/rouqa_card"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/roqua"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/roqua_icon"
+                                android:layout_marginTop="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/roqya"
+                                android:layout_below="@+id/roqua_icon"
+                                android:textSize="@dimen/_18ssp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center"
+                                android:textColor="@color/text_color" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>
