@@ -14,132 +14,130 @@
         android:layout_height="match_parent"
         tools:context=".ui.sabha.Sabha_counter"
         android:background="@drawable/background"
+        android:layoutDirection="rtl"
         >
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+        <RelativeLayout
+            android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_100sdp"
-            android:layout_margin="@dimen/_13sdp"
+            android:layout_above="@+id/counter_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/box_background"
             app:layout_constraintBottom_toTopOf="@+id/counter_button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.359">
-
+            android:layout_marginTop="@dimen/_20sdp"
+            >
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
-                android:src="@drawable/ic_arrow_upward_black_24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.23"
-                app:layout_constraintStart_toEndOf="@+id/choosing"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_arrow_upward_black_24dp" />
 
             <ImageView
                 android:id="@+id/love_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_28sdp"
-                android:src="@drawable/ic_favorite_border_black_24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/choosing"
-                app:layout_constraintHorizontal_bias="0.231"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.264" />
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:src="@drawable/ic_favorite_border_black_24dp" />
 
             <TextView
                 android:id="@+id/choosing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="example"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="esmaple"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_14ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.673"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.265"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <TextView
-                android:textStyle="bold"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/choosing"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:text="هدف التكرارا"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_14ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.599"
-                app:layout_constraintStart_toEndOf="@+id/love_icon"
-                app:layout_constraintTop_toBottomOf="@+id/choosing"
-                app:layout_constraintVertical_bias="0.287" />
+                android:textStyle="bold"
+
+                />
 
             <TextView
-                android:textStyle="bold"
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/love_icon"
+                android:layout_alignStart="@+id/love_icon"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:text="1000"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_14ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView2"
-                app:layout_constraintHorizontal_bias="0.213"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/love_icon"
-                app:layout_constraintVertical_bias="0.287" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/counter_button"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/circle_counter"
+            android:gravity="center"
+
+            android:text="0"
+            android:textSize="@dimen/_50ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.747"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="@dimen/_50ssp"
-            android:background="@drawable/circle_counter"
-            />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/reset_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/card"
             android:src="@drawable/replace"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/counter_button"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.922"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/counter_button" />
+            android:layout_marginBottom="@dimen/_40sdp"
+
+            />
 
         <ImageView
             android:id="@+id/back_button"
-            android:layout_width="@dimen/_25sdp"
-            android:layout_height="@dimen/_25sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
             android:src="@drawable/ic_arrow_back_black_24dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.041"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.328" />
+              />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

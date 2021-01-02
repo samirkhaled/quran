@@ -3,6 +3,7 @@ package samir.com.quran.ui.quran_fragments;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
 
 
 import android.app.Activity;
@@ -26,7 +27,7 @@ import java.util.List;
 import samir.com.quran.R;
 import samir.com.quran.databinding.ActivityQuranWithoutTafseerBinding;
 
-public class QuranWithoutTafseer extends AppCompatActivity {
+public class QuranWithoutTafseer extends AppCompatActivity  {
     ActivityQuranWithoutTafseerBinding binding;
     int count = 0;
 
@@ -42,10 +43,10 @@ public class QuranWithoutTafseer extends AppCompatActivity {
 
         //
 
-        //    String data = getAssetJsonData(getApplicationContext());
+
         JsonLocalQuran quran = getUser(this);
         final List<surahs> surahs = quran.getData().getSurahs();
-        Toast.makeText(this, String.valueOf(surahs.size()), Toast.LENGTH_LONG).show();
+
         //
 
         binding.rv.setLayoutManager(new LinearLayoutManager(this));
@@ -83,6 +84,7 @@ public class QuranWithoutTafseer extends AppCompatActivity {
 
             }
         });
+
 
     }
 
@@ -151,5 +153,6 @@ public class QuranWithoutTafseer extends AppCompatActivity {
 
         return surahsearch;
     }
+
 
 }

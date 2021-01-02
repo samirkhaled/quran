@@ -26,8 +26,9 @@ public class SuarhAdapter extends RecyclerView.Adapter<SuarhAdapter.SuarhViewHol
         this.surahsList = surahsList;
         this.context = context;
     }
-    public void setSurahsList(List<surahs> list){
-        this.surahsList=list;
+
+    public void setSurahsList(List<surahs> list) {
+        this.surahsList = list;
     }
 
     @NonNull
@@ -38,24 +39,23 @@ public class SuarhAdapter extends RecyclerView.Adapter<SuarhAdapter.SuarhViewHol
 
     @Override
     public void onBindViewHolder(@NonNull SuarhViewHolder holder, final int position) {
-        Log.d("TAG", "onBindViewHolder:"+surahsList.get(0).getAyahs().size());
 
-        if(surahsList.get(position).getRevelationType().equals("Meccan"))
-        {
-           holder.suarhType.setText("مكيه");
-        }
-        else{
+
+        if (surahsList.get(position).getRevelationType().equals("Meccan")) {
+            holder.suarhType.setText("مكيه");
+        } else {
             holder.suarhType.setText("مدنية");
         }
         holder.suarhName.setText(surahsList.get(position).getName());
-       holder.totalNumberOfAyahs.setText(""+surahsList.get(position).getAyahs().size());
+        holder.totalNumberOfAyahs.setText("" + surahsList.get(position).getAyahs().size());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Gson gson=new Gson();
-                String target=gson.toJson(surahsList.get(position).getAyahs());
-                Intent intent=new Intent(context,Ayahs_Activity.class);
-                intent.putExtra("target",target);
+                Gson gson = new Gson();
+                String target = gson.toJson(surahsList.get(position).getAyahs());
+                Intent intent = new Intent(context, Ayahs_Activity.class);
+                intent.putExtra("target", target);
+                intent.putExtra("suarhNo", String.valueOf(surahsList.get(position).getNumber()));
                 context.startActivity(intent);
 
             }
@@ -71,12 +71,13 @@ public class SuarhAdapter extends RecyclerView.Adapter<SuarhAdapter.SuarhViewHol
 
     class SuarhViewHolder extends RecyclerView.ViewHolder {
 
-        TextView suarhName,totalNumberOfAyahs,suarhType;
+        TextView suarhName, totalNumberOfAyahs, suarhType;
+
         public SuarhViewHolder(@NonNull View itemView) {
             super(itemView);
             suarhName = itemView.findViewById(R.id.surarh_text);
-            totalNumberOfAyahs=itemView.findViewById(R.id.total_numbers);
-            suarhType=itemView.findViewById(R.id.suarh_type);
+            totalNumberOfAyahs = itemView.findViewById(R.id.total_numbers);
+            suarhType = itemView.findViewById(R.id.suarh_type);
         }
     }
 }

@@ -12,8 +12,6 @@ public class JsonLocalQuran {
         this.data = data;
 
     }
-
-
     public int getCode() {
         return code;
     }

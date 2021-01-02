@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="rtl"
     tools:context=".ui.MainScreen">
 
     <RelativeLayout
@@ -27,5 +28,8 @@
         android:layout_gravity="bottom"
         app:itemIconTint="@android:color/black"
         android:overScrollMode="ifContentScrolls"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
         />
 </RelativeLayout>

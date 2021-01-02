@@ -11,9 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.quran_fragments.Ayahs_Activity"></activity>
-        <activity android:name=".ui.quran_fragments.QuranWithTafseer" />
-        <activity android:name=".ui.quran_fragments.QuranWithoutTafseer" />
+        <activity android:name=".ui.quran_fragments.Ayahs_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            ></activity>
+        <activity android:name=".ui.quran_fragments.QuranWithoutTafseer"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            />
         <activity
             android:name=".ui.MainScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

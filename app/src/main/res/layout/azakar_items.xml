@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="zakerkdsksdnvksdfnvks"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:padding="@dimen/_4sdp"
+        android:id="@+id/azakar_item_text"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="zakerkdsksdnvksdfnvks"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_4sdp"
+        android:id="@+id/azakar_item_text_title"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_below="@+id/azakar_item_text"
+        android:textColor="@color/home_title_text"
+        />
+</RelativeLayout>
+
+</ScrollView>

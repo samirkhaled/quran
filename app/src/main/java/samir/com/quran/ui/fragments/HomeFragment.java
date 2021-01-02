@@ -1,5 +1,6 @@
 package samir.com.quran.ui.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +16,10 @@ import samir.com.quran.ui.Radio_fragment;
 import samir.com.quran.ui.ahadeeth.Ahadeeth_home;
 import samir.com.quran.ui.azkar.Azkar_fragment;
 import samir.com.quran.ui.islamic_libraray.Islamic_library_home;
+import samir.com.quran.ui.quran_fragments.QuranWithoutTafseer;
 import samir.com.quran.ui.rouqa.Rouqa_home;
 import samir.com.quran.ui.sabha.Sabha_fragment;
 import samir.com.quran.ui.asmaa_allah.Assmaa_Allah_fragment;
-import samir.com.quran.ui.quran_fragments.Quran_home_frag;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,7 +60,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()){
 
             case R.id.quran_card:
-                fragment=new Quran_home_frag();
+              startActivity(new Intent(getContext(), QuranWithoutTafseer.class));
                 break;
             case R.id.sabha_card:
                 fragment=new Sabha_fragment();

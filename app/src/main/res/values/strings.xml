@@ -67,8 +67,8 @@
     <string name="sona10">قصص الصالحين</string>
     <!--!-->
     <!-- quran kareem!-->
-    <string name="quranWithoutTafseer">القراّن الكريم بدون تفسير</string>
-    <string name="quranWithTafseer">القراّن الكريم بلتفسير</string>
+    <string name="quranWithTafseer">لأظهار التفسير لكل اّيه اضغط على الاّيه</string>
+
 
     <!--!-->
     <!-- TODO: Remove or change this placeholder text -->

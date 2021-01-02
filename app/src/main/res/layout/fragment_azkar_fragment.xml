@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.azkar.Azkar_fragment"
-        android:background="@drawable/background">
+        android:background="@drawable/background"
+        android:layoutDirection="rtl"
+        >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -31,22 +33,23 @@
                     android:layout_height="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:src="@drawable/ic_arrow_back_black_24dp"
-                    app:layout_constraintEnd_toStartOf="@+id/azkar_text"
-                    app:layout_constraintHorizontal_bias="0.055"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
 
                 <TextView
                     android:id="@+id/azkar_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
                     android:text="@string/azkar_text"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/_20ssp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.849"
+
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,21 +132,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/azkar4" />
 
-                <TextView
-                    android:id="@+id/azkar6"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:text="@string/azkar6"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="normal"
-                    android:layout_margin="@dimen/_10ssp"
-                    android:background="@drawable/box_background"
-                    android:gravity="center"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/azkar5" />
 
                 <TextView
                     android:id="@+id/azkar7"
@@ -159,7 +147,7 @@
                     android:gravity="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/azkar6" />
+                    app:layout_constraintTop_toBottomOf="@+id/azkar4" />
 
                 <TextView
                     android:id="@+id/azkar8"
@@ -175,7 +163,9 @@
                     android:gravity="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/azkar7" />
+                    app:layout_constraintTop_toBottomOf="@+id/azkar7"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </ScrollView>

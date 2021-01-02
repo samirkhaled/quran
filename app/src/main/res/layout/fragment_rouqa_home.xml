@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.rouqa.Rouqa_home"
-        android:background="@drawable/background">
+        android:background="@drawable/background"
+        android:layoutDirection="rtl"
+        >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -49,20 +51,21 @@
                     android:src="@drawable/ic_arrow_back_black_24dp"
                     app:layout_constraintEnd_toStartOf="@+id/rouqa_text"
                     app:layout_constraintHorizontal_bias="0.044"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:id="@+id/rouqa_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_44sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
                     android:text="@string/roqya"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/_18ssp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.889"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,22 +102,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/rouqa2" />
 
                 <TextView
-                    android:id="@+id/rouqa4"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_margin="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_36sdp"
-                    android:background="@drawable/box_background"
-                    android:gravity="center"
-                    android:text="@string/roqua4"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="normal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/rouqa3" />
-
-                <TextView
                     android:id="@+id/rouqa5"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
@@ -128,7 +115,7 @@
                     android:textStyle="normal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/rouqa4" />
+                    app:layout_constraintTop_toBottomOf="@+id/rouqa3" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

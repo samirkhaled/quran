@@ -12,19 +12,20 @@
         android:layout_height="match_parent"
         android:background="@drawable/background"
         tools:context=".ui.sabha.Sabha_fragment"
-        android:paddingBottom="@dimen/_22sdp">
+        android:paddingBottom="@dimen/_22sdp"
+        android:layoutDirection="rtl"
+        >
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent">
+           >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
                 <TextView
                     android:id="@+id/sabaha_top"
@@ -47,10 +48,12 @@
                     android:text="@string/choose_zaker_text"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/_14ssp"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.868"
-                    app:layout_constraintStart_toEndOf="@+id/sabaha_top"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     />
 
                 <TextView

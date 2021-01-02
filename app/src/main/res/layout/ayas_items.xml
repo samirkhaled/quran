@@ -7,8 +7,8 @@
     android:orientation="vertical"
     android:textDirection="rtl"
     android:layout_marginBottom="5dp"
-    app:contentPadding="4dp"
-    android:elevation="8dp"
+    app:contentPadding="@dimen/_4sdp"
+    android:elevation="@dimen/_8sdp"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,13 +16,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
+            android:textSize="@dimen/_18ssp"
             android:textColor="@android:color/black"
             android:fontFamily="@font/me_quran"
             android:id="@+id/ayaht_text"
             android:layout_marginStart="5dp"
             android:textStyle="bold"
-            android:padding="4dp"
+            android:padding="@dimen/_4sdp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -31,12 +31,26 @@
             android:layout_alignParentLeft="true"
             android:text="22"
             android:textColor="#000"
-            android:textSize="14dp"
+            android:textSize="@dimen/_14sdp"
             android:id="@+id/ayaht_number"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/_20sdp"
             android:textStyle="bold"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ayaht_number"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="normal"
+            android:id="@+id/ayah_tafseer"
+            android:visibility="gone"
+
+            />
     </RelativeLayout>
+
 </androidx.cardview.widget.CardView>
 
 
